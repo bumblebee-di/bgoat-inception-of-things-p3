@@ -5,8 +5,8 @@ metadata:
 spec:
   selector:
     app: app
-  type: LoadBalancer
+  # type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 8888
+    port: 80
     targetPort: 8888
