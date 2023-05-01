@@ -9,6 +9,8 @@ spec:
   selector:
     matchLabels:
       app: app
+  strategy:
+    type: Recreate
   template:
     metadata:
       labels:
@@ -17,6 +19,5 @@ spec:
       containers:
       - name: app
         image: wil42/playground:v2
-        strategy: recreate
         ports:
           - containerPort : 8888
